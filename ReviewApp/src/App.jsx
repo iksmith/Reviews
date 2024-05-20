@@ -20,7 +20,6 @@ function App() {
           <Route path='*' element={<NoPage />} />
         </Routes>
       </BrowserRouter>
-     
     </>
   )
 }
