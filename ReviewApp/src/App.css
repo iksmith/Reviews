@@ -24,9 +24,28 @@ html {
   justify-content: space-between;
 }
 
+.homeLink {
+  text-decoration: none;
+  color: #212121;
+  font-size: large;
+  font-weight: 600;
+}
+
+.createBtn {
+  height: 2rem;
+}
+
 
 /* Create Page & Components  */
+
+.createPageTitle {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+
 .formWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -42,6 +61,10 @@ html {
 
 textarea {
   resize: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 input {
@@ -49,9 +72,29 @@ input {
   border-radius: 6px;
 }
 
+.search {
+  display: flex;
+  flex-direction: row;
+}
+
+ .searchBtn, button{
+  height: 2.3rem;
+  align-items: center;
+  margin-left: 1rem;
+  background-color: white;
+  border: solid 2px #212121;
+  border-radius: 6px;
+  transition: ease-in-out 0.2s;
+}
+
+.searchBtn:hover, button:hover {
+  background-color: #212121;
+  color: white;
+}
+
 .search input {
-  height: 2rem;
-  width: 20rem;
+  height: 2.3rem;
+  width: 15.2rem;
   margin-bottom: 1rem;
 }
 
@@ -59,14 +102,25 @@ input {
   height: 2rem;
   width: 19.5rem;
   margin-bottom: 1rem;
+  border: #212121 2px solid;
 }
 
 .reviewTxt textarea{
   margin-bottom: 1rem;
-  border-radius: 9px;
+  border-radius: 6px;
+  text-align: left;
+  transition: ease-in-out 0.1s;
+  position: absolute;
+}
+
+.reviewTxt textarea:focus{
+ outline: none;
+ border: #212121 2px solid;
 }
 
 .reviewRating input {
+  position: relative;
+  top: 26.5rem;
   height: 2rem;
   width: 4rem;
   margin-bottom: 1rem;
@@ -74,10 +128,16 @@ input {
 }
 
 .submit input{
-  height: 2rem;
+  position: absolute;
+  bottom: .7rem;
+  height: 2.5rem;
   text-indent: 0;
   background-color: white;
+  width: 10rem;
+  font-size: large;
+  font-weight: 600;
   transition: ease-in-out 0.2s;
+
 }
 
 .submit input:hover {

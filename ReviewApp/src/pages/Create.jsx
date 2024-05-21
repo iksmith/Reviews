@@ -1,10 +1,12 @@
 import React from 'react'
 import ReviewForm from '../components/ReviewForm'
+import Navbar from '../components/Navbar'
 
 function Create() {
   return (
     <div>
-      <h1>Create Review</h1>
+      <Navbar />
+      <p className='createPageTitle'>Create Review</p>
       <div className="form">
         <ReviewForm />
       </div>
